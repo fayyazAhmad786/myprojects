@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    tools:context=".Crop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardviewborder"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/etsearchcnic"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Search CNIC..."
+                    android:padding="7dp"
+                    android:maxLength="13"
+                    android:inputType="number"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:id="@+id/searchdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:layout_gravity="center"
+                    app:tint="#4CAF50" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="230dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:background="?android:attr/listDivider" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Survey ID"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvsurveyid"/>
+
+            <EditText
+                android:id="@+id/etid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Survey ID"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etsurveyid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User ID"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvuserid"/>
+
+            <EditText
+                android:id="@+id/etdestructiontype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User ID"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etuserid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="District"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvdistrict"/>
+
+            <EditText
+                android:id="@+id/etdistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="District"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etdistrict"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tehsil"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvtehsil"/>
+
+            <EditText
+                android:id="@+id/etTehsil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tehsil"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="ettehsil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qounungoi Halqa"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvqh"/>
+
+            <EditText
+                android:id="@+id/etqounungoihalqa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qounungoi Halqa"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etqh"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patwari Circle"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvpt"/>
+
+            <EditText
+                android:id="@+id/etpatwaricircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardviewborder"
+                android:enabled="false"
+                android:hint="Patwari Circle"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:tag="etpatwaricircle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muaza"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvmauza"/>
+
+            <EditText
+                android:id="@+id/etmuaza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mauza"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etmauza"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture 1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvpic1"/>
+
+            <ImageView
+                android:id="@+id/ivimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/commingsoon"
+                android:layout_gravity="center"
+                android:tag="iv_image1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture 2"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvpic2"/>
+
+            <ImageView
+                android:id="@+id/ivimage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/commingsoon"
+                android:layout_gravity="center"
+                android:tag="iv_image2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture 3"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvpic3"/>
+
+            <ImageView
+                android:id="@+id/ivimage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/commingsoon"
+                android:layout_gravity="center"
+                android:tag="iv_image3"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvname"/>
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etname"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father/Spouse"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvfatherspouse"/>
+
+            <EditText
+                android:id="@+id/etfatherspousename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father/Spouse"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etfatherspouse"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNIC"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvcnic"/>
+
+            <EditText
+                android:id="@+id/etcnich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CNIC"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="13"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etcnic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvage"/>
+
+            <EditText
+                android:id="@+id/etage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvaddress"/>
+
+            <EditText
+                android:id="@+id/etaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:padding="8dp"
+                android:maxLength="30"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etaddress"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvmobile"/>
+
+            <EditText
+                android:id="@+id/etmobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="11"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etmobile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Kin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvnameofking"/>
+
+            <EditText
+                android:id="@+id/etnameofkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Kin"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etnameofking"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNIC Deceased"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvcnicdeceased"/>
+
+            <EditText
+                android:id="@+id/etcnicdeceased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CNIC Deceased"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="13"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etcnicdeceased"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvremarks"/>
+
+            <EditText
+                android:id="@+id/etremarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Remarks"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etremarks"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Date"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvremarks"/>
+
+            <EditText
+                android:id="@+id/etreportdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Report Date"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etreport_date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvgender"/>
+
+            <EditText
+                android:id="@+id/etgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etgender"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marital Status"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvmaritalstatus"/>
+
+            <EditText
+                android:id="@+id/etmaritalstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marital Status"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etmaritalstatus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Canal Meter"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvwatercanalmeter"/>
+
+            <EditText
+                android:id="@+id/etwatercanalmeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Water Canal Meter"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etwatercanalmeter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Occupancy Status"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvoccupancystatus"/>
+
+            <EditText
+                android:id="@+id/etoccupancystatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Occupancy Status"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etoccupancystatus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Risk"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvlocationrisk"/>
+
+            <EditText
+                android:id="@+id/etlocationrisk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location Risk"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etlocationrisk"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flood Palin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvfloodpalin"/>
+
+            <EditText
+                android:id="@+id/etfloodpalin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Flood Palin"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etfloodpalin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Account"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvbankaccount"/>
+
+            <EditText
+                android:id="@+id/etbankaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bank Account"
+                android:padding="8dp"
+                android:maxLength="24"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etbankaccount"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Injuries"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cardviewborder"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name with Relationship"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvnamewithrelationship"/>
+
+            <EditText
+                android:id="@+id/etnamewithrelation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name with Relation"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etnamewithrelation"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNIC"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvcnicinjury"/>
+
+            <EditText
+                android:id="@+id/etcnicrelation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CNIC"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="13"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etcnicinjury"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvgenderinjury"/>
+
+            <EditText
+                android:id="@+id/etgenderrelation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etgenderinjury"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disability"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvdisability"/>
+
+            <EditText
+                android:id="@+id/etdisability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Disability"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etdisability"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relationship Household"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvrelationshiphousehold"/>
+
+            <EditText
+                android:id="@+id/etrelationhousehold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Relationship Household"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etrelationhousehold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvageinjury"/>
+
+            <EditText
+                android:id="@+id/etagerelation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etageinjury"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Death"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvdeath"/>
+
+            <EditText
+                android:id="@+id/etdeath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Death"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etdeath"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Death Cause"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvdeathcause"/>
+
+            <EditText
+                android:id="@+id/etdeathcause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Death Cause"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etdeathcause"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Injury"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvinjury"/>
+
+            <EditText
+                android:id="@+id/etinjury"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Injury"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etinjury"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damaged\nHouse/Shop"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cardviewborder"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvtype"/>
+
+            <EditText
+                android:id="@+id/ettype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="House/Shop"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="ettype"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Type Damage"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvothertypedamage"/>
+
+            <EditText
+                android:id="@+id/etothertypedamage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Other Type Damage"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etothertypedamage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damage Type"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvdamagetype"/>
+
+            <EditText
+                android:id="@+id/etdamagetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Damage Type"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etdamagetype"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boundary Wall Damaged"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvboundarywalldamage"/>
+
+            <EditText
+                android:id="@+id/etboundarywalldamaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Boundary Wall Damaged"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etboundarywalldamaged"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rooms Damaged"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvroomsdamaged"/>
+
+            <EditText
+                android:id="@+id/etroomsdamaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rooms Damaged"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etroomsdamaged"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio Structure Intact"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvradiostructureintact"/>
+
+            <EditText
+                android:id="@+id/etintact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Radio Structure Intact"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etradiostructureintact"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Rooms"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvnumberofrooms"/>
+
+            <EditText
+                android:id="@+id/etnorooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Rooms"
+                android:padding="8dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etnumberofrooms"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Structure Type"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvstructuretype"/>
+
+            <EditText
+                android:id="@+id/etstructuretype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Structure Type"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etstructuretype"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damage Category"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:tag="tvdamagecategory"/>
+
+            <EditText
+                android:id="@+id/etdamagecategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Damage Category"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:enabled="false"
+                android:background="@drawable/cardviewborder"
+                android:tag="etdamagecategory"/>
+
+            <Button
+                android:id="@+id/senddata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Data"
+                android:textColor="#4CAF50"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:padding="11dp"
+                android:backgroundTint="@color/white"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
